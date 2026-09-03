@@ -1,98 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Marioclub</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <a href="index.html">
-            <h1>Marioclub</h1>
-        </a>
+      <a href="index.html">
+        <h1>Marioclub</h1>
+      </a>
     </header>
     <section class="banner">
-        <img src="img/banner.webp" alt="supermario with cube in hand">
-        <div class="welcome">
-            <h1>Get in Touch<br><span>with Marioclub</span></h1>
-        </div>
+      <img src="img/banner.webp" alt="supermario with cube in hand" />
+      <div class="welcome">
+        <h1>Get in Touch<br /><span>with Marioclub</span></h1>
+      </div>
     </section>
     <nav class="main-nav">
-        <ul>
-            <li><a href="index.html">Join the club</a></li>
-            <li><a href="news.html">Latest news</a></li>
-            <li><a href="games.html">New games</a></li>
-            <li><a href="contact.html" class="join" aria-current="page">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Join the club</a></li>
+        <li><a href="news.html">Latest news</a></li>
+        <li><a href="games.html">New games</a></li>
+        <li>
+          <a href="contact.html" class="join" aria-current="page">Contact</a>
+        </li>
+      </ul>
     </nav>
     <main>
-        <article>
-            <h2>Get in touch with me, Mario</h2>
-            <form>
-                <input type="text" name="fname" placeholder="Type Firstname" required>
-                <input type="text" name="lname" placeholder="Type Lastname" required><br />
-                <input type="email" name="mail" placeholder="Type Email" required>
-                <input list="countries" name="country" id="country">
-                <datalist id="countries">
-                    <option value="Albania">
-                    <option value="Austria">
-                    <option value="Belarus">
-                    <option value="Belgium">
-                    <option value="Bosnia">
-                    <option value="Bulgaria">
-                    <option value="Croatia">
-                    <option value="Czech Republic">
-                    <option value="Denmark">
-                    <option value="Finland">
-                    <option value="France">
-                    <option value="Georgia">
-                    <option value="Germany">
-                    <option value="Greece">
-                    <option value="Hungary">
-                    <option value="Ireland">
-                    <option value="Italy">
-                    <option value="Kazakhstan">
-                    <option value="Lithuania">
-                    <option value="Netherlands">
-                    <option value="Norway">
-                    <option value="Poland">
-                    <option value="Portugal">
-                    <option value="Romania">
-                    <option value="Russia">
-                    <option value="Serbia">
-                    <option value="Slovakia">
-                    <option value="Spain">
-                    <option value="Turkey">
-                    <option value="Sweden">
-                    <option value="Switzerland">
-                    <option value="Ukraine">
-                    <option value="United Kingdom">
-                </datalist>
-                <br />
-                <textarea name="question" rows="4" cols="40" placeholder="Ask a question...">Ask a question</textarea>
-                <input type="submit" value="Get in Touch">
-            </form>
-        </article>
-        <ul class="images">
-            <li><img src="img/thumb-1.webp" alt="super mario jumping in game" loading="lazy"></li>
-            <li><img src="img/thumb-2.webp" alt="super mario swimming in game" loading="lazy"></li>
-        </ul>
+      <article>
+        <h2>Get in touch with me, Mario</h2>
+        <form>
+          <label for="fname">Type Firstname</label>
+          <input type="text" id="fname" placeholder="Type Firstname" required />
+
+          <label for="lname">Type Lastname</label>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Type Lastname"
+            required
+          /><br />
+
+          <label for="email">Type Email</label>
+          <input type="email" id="email" placeholder="Type Email" required />
+
+          <label for="country">Country</label>
+          <input list="countries" id="country" name="country" />
+
+          <label for="countries">Country</label>
+          <datalist id="countries">
+            <option value="Albania"></option>
+            <option value="Austria"></option>
+            <option value="Belarus"></option>
+            <option value="Belgium"></option>
+            <option value="Bosnia"></option>
+            <option value="Bulgaria"></option>
+            <option value="Croatia"></option>
+            <option value="Czech Republic"></option>
+            <option value="Denmark"></option>
+            <option value="Finland"></option>
+            <option value="France"></option>
+            <option value="Georgia"></option>
+            <option value="Germany"></option>
+            <option value="Greece"></option>
+            <option value="Hungary"></option>
+            <option value="Ireland"></option>
+            <option value="Italy"></option>
+            <option value="Kazakhstan"></option>
+            <option value="Lithuania"></option>
+            <option value="Netherlands"></option>
+            <option value="Norway"></option>
+            <option value="Poland"></option>
+            <option value="Portugal"></option>
+            <option value="Romania"></option>
+            <option value="Russia"></option>
+            <option value="Serbia"></option>
+            <option value="Slovakia"></option>
+            <option value="Spain"></option>
+            <option value="Turkey"></option>
+            <option value="Sweden"></option>
+            <option value="Switzerland"></option>
+            <option value="Ukraine"></option>
+            <option value="United Kingdom"></option>
+          </datalist>
+          <br />
+          <label for="question">Ask a question...</label>
+          <textarea
+            id="question"
+            name="question"
+            rows="4"
+            cols="40"
+            placeholder="Ask a question..."
+          >
+Ask a question</textarea
+          >
+          <label for="submit">Get in Touch</label>
+          <input id="submit" value="Get in Touch" />
+        </form>
+      </article>
+      <ul class="images">
+        <li>
+          <img
+            src="img/thumb-1.webp"
+            alt="super mario jumping in game"
+            loading="lazy"
+          />
+        </li>
+        <li>
+          <img
+            src="img/thumb-2.webp"
+            alt="super mario swimming in game"
+            loading="lazy"
+          />
+        </li>
+      </ul>
     </main>
     <section class="join">
-        <h2>Contact Us today!</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis dignissimos minus voluptatem.</p>
-        <form>
-            <input type="email" name="email" placeholder="Type email & hit enter" required>
-        </form>
-
+      <h2>Contact Us today!</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
+        dignissimos minus voluptatem.
+      </p>
+      <form>
+        <label for="newsletter-email">Type email & hit enter</label>
+        <input
+          id="newsletter-email"
+          name="email"
+          placeholder="Type email & hit enter"
+          autocomplete="email"
+        />
+        <button type="submit">Join the club</button>
+      </form>
     </section>
     <footer>
-        <p class="copyright">Copyright 2019 Marioclub</p>
+      <p class="copyright">Copyright 2019 Marioclub</p>
     </footer>
-</body>
-
+  </body>
 </html>
