@@ -30,7 +30,7 @@ header h1{
   width: 100%;
 }
 .banner .welcome{
-  background:#FEB614;
+  background: #F63232;
   color: white;
   padding: 30px;
   font-size: 60px;
@@ -176,7 +176,7 @@ input[type="submit"]:focus {
     outline: none
 }
 footer{
-  background: #F63232;
+  background-color: black;
   color: white;
   padding: 10px;
   text-align: center;
